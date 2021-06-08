@@ -1,8 +1,8 @@
 
 // Array#uniq
-    function uniq(array) {
+    Array.prototype.uniq = function() {
         const result = [];
-       array.forEach(el=>{
+       this.forEach(el=>{
         if(!result.includes(el)){
             result.push(el)}
        });
