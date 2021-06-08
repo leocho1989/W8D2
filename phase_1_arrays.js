@@ -12,7 +12,7 @@
 
 // Array#twoSum
 
-   function twoSum(array) {
+   Array.prototype.twoSum = function() {
         const result = [];
        for (let i = 0; i < array.length; i++){
            for (let j = i+1; j < array.length; j++){
@@ -34,7 +34,7 @@
 //             ];
 
  
-function transpose(arr) {
+Array.prototype.transpose = function(){
     const result = arr.slice();
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < i; j++) {
